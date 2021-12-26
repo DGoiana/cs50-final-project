@@ -1,0 +1,158 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    GAMES
+{% endblock %}
+
+{% block main %}
+    {% for data in data %}
+        <div>
+            {% if data.home_team.abbreviation == 'ATL' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612737/global/L/logo.svg" width="130" height="130" style="float:left;">
+            {% elif data.home_team.abbreviation == 'LAL' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612747/global/L/logo.svg" width="130" height="130" style="float:left;">
+            {% elif data.home_team.abbreviation == 'BOS' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612738/global/L/logo.svg" width="130" height="130" style="float:left;">
+            {% elif data.home_team.abbreviation == 'BKN' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612751/global/L/logo.svg" width="130" height="130" style="float:left;">
+            {% elif data.home_team.abbreviation == 'CHA' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612766/global/L/logo.svg" width="130" height="130" style="float:left;">
+            {% elif data.home_team.abbreviation == 'CHI' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612741/global/L/logo.svg" width="130" height="130" style="float:left;">
+            {% elif data.home_team.abbreviation == 'CLE' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612739/global/L/logo.svg" width="130" height="130" style="float:left;">
+            {% elif data.home_team.abbreviation == 'DAL' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612742/global/L/logo.svg" width="130" height="130" style="float:left;">
+            {% elif data.home_team.abbreviation == 'DEN' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612743/global/L/logo.svg" width="130" height="130" style="float:left;">
+            {% elif data.home_team.abbreviation == 'DET' %}
+                <img src="https://cdn.worldvectorlogo.com/logos/detroit-pistons-4.svg" width="130" height="130" style="float:left;">
+            {% elif data.home_team.abbreviation == 'GSW' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612744/global/L/logo.svg" width="130" height="130" style="float:left;">
+            {% elif data.home_team.abbreviation == 'HOU' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612745/global/L/logo.svg" width="130" height="130" style="float:left;">
+            {% elif data.home_team.abbreviation == 'IND' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612754/global/L/logo.svg" width="130" height="130" style="float:left;">
+            {% elif data.home_team.abbreviation == 'LAC' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612746/global/L/logo.svg" width="130" height="130" style="float:left;">
+            {% elif data.home_team.abbreviation == 'MEM' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612763/global/L/logo.svg" width="130" height="130" style="float:left;">
+            {% elif data.home_team.abbreviation == 'MIA' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612748/global/L/logo.svg" width="130" height="130" style="float:left;">
+            {% elif data.home_team.abbreviation == 'MIL' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612749/global/L/logo.svg" width="130" height="130" style="float:left;">
+            {% elif data.home_team.abbreviation == 'MIN' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612750/global/L/logo.svg" width="130" height="130" style="float:left;">
+            {% elif data.home_team.abbreviation == 'NOP' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612740/global/L/logo.svg" width="130" height="130" style="float:left;">
+            {% elif data.home_team.abbreviation == 'NYK' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612752/global/L/logo.svg" width="130" height="130" style="float:left;">
+            {% elif data.home_team.abbreviation == 'OKC' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612760/global/L/logo.svg" width="130" height="130" style="float:left;">
+            {% elif data.home_team.abbreviation == 'ORL' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612753/global/L/logo.svg" width="130" height="130" style="float:left;">
+            {% elif data.home_team.abbreviation == 'PHI' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612755/global/L/logo.svg" width="130" height="130" style="float:left;">
+            {% elif data.home_team.abbreviation == 'PHX' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612756/global/L/logo.svg" width="130" height="130" style="float:left;">
+            {% elif data.home_team.abbreviation == 'POR' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612757/global/L/logo.svg" width="130" height="130" style="float:left;">
+            {% elif data.home_team.abbreviation == 'SAC' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612758/global/L/logo.svg" width="130" height="130" style="float:left;">
+            {% elif data.home_team.abbreviation == 'SAS' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612759/global/L/logo.svg" width="130" height="130" style="float:left;">
+            {% elif data.home_team.abbreviation == 'TOR' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612761/global/L/logo.svg" width="130" height="130" style="float:left;">
+            {% elif data.home_team.abbreviation == 'UTA' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612762/global/L/logo.svg" width="130" height="130" style="float:left;">
+            {% else %}
+                <img src="https://cdn.nba.com/logos/nba/1610612764/global/L/logo.svg" width="130" height="130" style="float:left;">
+            {% endif %}
+            Status: <b>{{ data.status }}</b>
+            {% if data.visitor_team.abbreviation == 'ATL' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612737/global/L/logo.svg" width="130" height="130" style="float:right;">
+            {% elif data.visitor_team.abbreviation == 'LAL' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612747/global/L/logo.svg" width="130" height="130" style="float:right;">
+            {% elif data.visitor_team.abbreviation == 'BOS' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612738/global/L/logo.svg" width="130" height="130" style="float:right;">
+            {% elif data.visitor_team.abbreviation == 'BKN' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612751/global/L/logo.svg" width="130" height="130" style="float:right;">
+            {% elif data.visitor_team.abbreviation == 'CHA' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612766/global/L/logo.svg" width="130" height="130" style="float:right;">
+            {% elif data.visitor_team.abbreviation == 'CHI' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612741/global/L/logo.svg" width="130" height="130" style="float:right;">
+            {% elif data.visitor_team.abbreviation == 'CLE' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612739/global/L/logo.svg" width="130" height="130" style="float:right;">
+            {% elif data.visitor_team.abbreviation == 'DAL' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612742/global/L/logo.svg" width="130" height="130" style="float:right;">
+            {% elif data.visitor_team.abbreviation == 'DEN' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612743/global/L/logo.svg" width="130" height="130" style="float:right;">
+            {% elif data.visitor_team.abbreviation == 'DET' %}
+                <img src="https://cdn.worldvectorlogo.com/logos/detroit-pistons-4.svg" width="130" height="130" style="float:right;">
+            {% elif data.visitor_team.abbreviation == 'GSW' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612744/global/L/logo.svg" width="130" height="130" style="float:right;">
+            {% elif data.visitor_team.abbreviation == 'HOU' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612745/global/L/logo.svg" width="130" height="130" style="float:right;">
+            {% elif data.visitor_team.abbreviation == 'IND' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612754/global/L/logo.svg" width="130" height="130" style="float:right;">
+            {% elif data.visitor_team.abbreviation == 'LAC' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612746/global/L/logo.svg" width="130" height="130" style="float:right;">
+            {% elif data.visitor_team.abbreviation == 'MEM' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612763/global/L/logo.svg" width="130" height="130" style="float:right;">
+            {% elif data.visitor_team.abbreviation == 'MIA' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612748/global/L/logo.svg" width="130" height="130" style="float:right;">
+            {% elif data.visitor_team.abbreviation == 'MIL' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612749/global/L/logo.svg" width="130" height="130" style="float:right;">
+            {% elif data.visitor_team.abbreviation == 'MIN' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612750/global/L/logo.svg" width="130" height="130" style="float:right;">
+            {% elif data.visitor_team.abbreviation == 'NOP' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612740/global/L/logo.svg" width="130" height="130" style="float:right;">
+            {% elif data.visitor_team.abbreviation == 'NYK' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612752/global/L/logo.svg" width="130" height="130" style="float:right;">
+            {% elif data.visitor_team.abbreviation == 'OKC' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612760/global/L/logo.svg" width="130" height="130" style="float:right;">
+            {% elif data.visitor_team.abbreviation == 'ORL' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612753/global/L/logo.svg" width="130" height="130" style="float:right;">
+            {% elif data.visitor_team.abbreviation == 'PHI' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612755/global/L/logo.svg" width="130" height="130" style="float:right;">
+            {% elif data.visitor_team.abbreviation == 'PHX' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612756/global/L/logo.svg" width="130" height="130" style="float:right;">
+            {% elif data.visitor_team.abbreviation == 'POR' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612757/global/L/logo.svg" width="130" height="130" style="float:right;">
+            {% elif data.visitor_team.abbreviation == 'SAC' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612758/global/L/logo.svg" width="130" height="130" style="float:right;">
+            {% elif data.visitor_team.abbreviation == 'SAS' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612759/global/L/logo.svg" width="130" height="130" style="float:right;">
+            {% elif data.visitor_team.abbreviation == 'TOR' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612761/global/L/logo.svg" width="130" height="130" style="float:right;">
+            {% elif data.visitor_team.abbreviation == 'UTA' %}
+                <img src="https://cdn.nba.com/logos/nba/1610612762/global/L/logo.svg" width="130" height="130" style="float:right;">
+            {% else %}
+                <img src="https://cdn.nba.com/logos/nba/1610612764/global/L/logo.svg" width="130" height="130" style="float:right;">
+            {% endif %}
+        </div>
+        <div>
+            <h4>{{ data.home_team.full_name }}</h4>
+        </div>
+        {% if data.home_team_score > data.visitor_team_score %}
+            <div style="font-size: 35px;"><b>{{ data.home_team_score }}</b> - {{ data.visitor_team_score}}</div>
+        {% elif data.home_team_score < data.visitor_team_score %}
+            <div style="font-size: 35px;">{{ data.home_team_score }} - <b>{{ data.visitor_team_score}}</b></div>
+        {% else %}
+            <div style="font-size: 35px;">{{ data.home_team_score }} - {{ data.visitor_team_score}}</div>
+        {% endif %}
+        <div>
+            <h4>{{ data.visitor_team.full_name }}</h4>
+        </div>
+        <div>
+            Date: <b>{{ data.date }}</b>
+        </div>
+        <div>
+            Game ID: <b>{{ data.id }}</b>
+        </div>
+        <pre></pre>
+        <pre></pre>
+        <pre></pre>
+        <pre></pre>
+    {% endfor %}
+{% endblock %}

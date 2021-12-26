@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    PLAYERS
+{% endblock %}
+
+{% block main %}
+    <div class="alert alert-warning">
+        <strong>Attention!</strong> Some information about formed players might be incorrect due to lack of updates from the API.
+    </div>
+    <form action="/players" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="input" name="first" placeholder="First Name" type="text">
+            <input autocomplete="off" autofocus class="input" name="surname" placeholder="Surname" type="text">
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary" type="submit">Search</button>
+        </div>
+    </form>
+{% endblock %}

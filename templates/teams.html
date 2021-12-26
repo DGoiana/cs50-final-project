@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    TEAMS
+{% endblock %}
+
+{% block main %}
+    <pre></pre>
+    <pre></pre>
+    <pre></pre>
+    <form action="/team" method="post">
+        <div class="form-group">
+            <select name="teams" class="select">
+                <option disabled selected value="">Teams</option>
+                {% for team in teams %}
+                <option value={{ team }}>{{ team }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary" type="submit">Search</button>
+        </div>
+    </form>
+    <pre></pre>
+    <pre></pre>
+    <pre></pre>
+    <pre></pre>
+    <pre></pre>
+    <pre></pre>
+    <pre></pre>
+    <pre></pre>
+    {% for img in imgs %}
+        <img src= {{ img }} width="100" height="100">
+    {% endfor %}
+{% endblock %}

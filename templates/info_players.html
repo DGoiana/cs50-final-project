@@ -1,0 +1,285 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    PLAYERS
+{% endblock %}
+
+{% block main %}
+    {% for data in data %}
+        {% if data.position == "" %}
+            <div class="alert alert-secondary">
+                This is a formed player.
+            </div>
+        {% endif %}
+        {% if team == 'ATL' %}
+                <div class="card center" style="width:300px">
+                    <img src="https://cdn.nba.com/logos/nba/1610612737/global/L/logo.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">{{ name }} {{ last }}</h4>
+                        <p class="card-text">{{ data.season }}</p>
+                    </div>
+                </div>
+        {% elif team == 'LAL' %}
+                <div class="card center" style="width:300px">
+                    <img src="https://cdn.nba.com/logos/nba/1610612747/global/L/logo.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">{{ name }} {{ last }}</h4>
+                        <p class="card-text">{{ data.season }}</p>
+                    </div>
+                </div>
+        {% elif team == 'BOS' %}
+                <div class="card center" style="width:300px">
+                    <img src="https://cdn.nba.com/logos/nba/1610612738/global/L/logo.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">{{ name }} {{ last }}</h4>
+                        <p class="card-text">{{ data.season }}</p>
+                    </div>
+                </div>
+        {% elif team == 'BKN' %}
+                <div class="card center" style="width:300px">
+                    <img src="https://cdn.nba.com/logos/nba/1610612751/global/L/logo.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">{{ name }} {{ last }}</h4>
+                        <p class="card-text">{{ data.season }}</p>
+                    </div>
+                </div>
+        {% elif team == 'CHA' %}
+                <div class="card center" style="width:300px">
+                    <img src="https://cdn.nba.com/logos/nba/1610612766/global/L/logo.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">{{ name }} {{ last }}</h4>
+                        <p class="card-text">{{ data.season }}</p>
+                    </div>
+                </div>
+        {% elif team == 'CHI' %}
+                <div class="card center" style="width:300px">
+                    <img src="https://cdn.nba.com/logos/nba/1610612741/global/L/logo.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">{{ name }} {{ last }}</h4>
+                        <p class="card-text">{{ data.season }}</p>
+                    </div>
+                </div>
+        {% elif team == 'CLE' %}
+                <div class="card center" style="width:300px">
+                    <img src="https://cdn.nba.com/logos/nba/1610612739/global/L/logo.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">{{ name }} {{ last }}</h4>
+                        <p class="card-text">{{ data.season }}</p>
+                    </div>
+                </div>
+        {% elif team == 'DAL' %}
+                <div class="card center" style="width:300px">
+                    <img src="https://cdn.nba.com/logos/nba/1610612742/global/L/logo.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">{{ name }} {{ last }}</h4>
+                        <p class="card-text">{{ data.season }}</p>
+                    </div>
+                </div>
+        {% elif team == 'DEN' %}
+                <div class="card center" style="width:300px">
+                    <img src="https://cdn.nba.com/logos/nba/1610612743/global/L/logo.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">{{ name }} {{ last }}</h4>
+                        <p class="card-text">{{ data.season }}</p>
+                    </div>
+                </div>
+        {% elif team == 'DET' %}
+                <div class="card center" style="width:300px">
+                    <img src="https://cdn.worldvectorlogo.com/logos/detroit-pistons-4.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">{{ name }} {{ last }}</h4>
+                        <p class="card-text">{{ data.season }}</p>
+                    </div>
+                </div>
+        {% elif team == 'GSW' %}
+                <div class="card center" style="width:300px">
+                    <img src="https://cdn.nba.com/logos/nba/1610612744/global/L/logo.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">{{ name }} {{ last }}</h4>
+                        <p class="card-text">{{ data.season }}</p>
+                    </div>
+                </div>
+        {% elif team == 'HOU' %}
+                <div class="card center" style="width:300px">
+                    <img src="https://cdn.nba.com/logos/nba/1610612745/global/L/logo.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">{{ name }} {{ last }}</h4>
+                        <p class="card-text">{{ data.season }}</p>
+                    </div>
+                </div>
+        {% elif team == 'IND' %}
+                <div class="card center" style="width:300px">
+                    <img src="https://cdn.nba.com/logos/nba/1610612754/global/L/logo.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">{{ name }} {{ last }}</h4>
+                        <p class="card-text">{{ data.season }}</p>
+                    </div>
+                </div>
+        {% elif team == 'LAC' %}
+                <div class="card center" style="width:300px">
+                    <img src="https://cdn.nba.com/logos/nba/1610612746/global/L/logo.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">{{ name }} {{ last }}</h4>
+                        <p class="card-text">{{ data.season }}</p>
+                    </div>
+                </div>
+        {% elif team == 'MEM' %}
+                <div class="card center" style="width:300px">
+                    <img src="https://cdn.nba.com/logos/nba/1610612763/global/L/logo.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">{{ name }} {{ last }}</h4>
+                        <p class="card-text">{{ data.season }}</p>
+                    </div>
+                </div>
+        {% elif team == 'MIA' %}
+                <div class="card center" style="width:300px">
+                    <img src="https://cdn.nba.com/logos/nba/1610612748/global/L/logo.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">{{ name }} {{ last }}</h4>
+                        <p class="card-text">{{ data.season }}</p>
+                    </div>
+                </div>
+        {% elif team == 'MIL' %}
+                <div class="card center" style="width:300px">
+                    <img class="card-img-top" src="https://cdn.nba.com/logos/nba/1610612749/global/L/logo.svg" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">{{ name }} {{ last }}</h4>
+                        <p class="card-text">{{ data.season }}</p>
+                    </div>
+                </div>
+        {% elif team == 'MIN' %}
+                <div class="card center" style="width:300px">
+                    <img src="https://cdn.nba.com/logos/nba/1610612750/global/L/logo.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">{{ name }} {{ last }}</h4>
+                        <p class="card-text">{{ data.season }}</p>
+                    </div>
+                </div>
+        {% elif team == 'NOP' %}
+                <div class="card center" style="width:300px">
+                    <img src="https://cdn.nba.com/logos/nba/1610612740/global/L/logo.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">{{ name }} {{ last }}</h4>
+                        <p class="card-text">{{ data.season }}</p>
+                    </div>
+                </div>
+        {% elif team == 'NYK' %}
+                <div class="card center" style="width:300px">
+                    <img src="https://cdn.nba.com/logos/nba/1610612752/global/L/logo.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">{{ name }} {{ last }}</h4>
+                        <p class="card-text">{{ data.season }}</p>
+                    </div>
+                </div>
+        {% elif team == 'OKC' %}
+                <div class="card center" style="width:300px">
+                    <img src="https://cdn.nba.com/logos/nba/1610612760/global/L/logo.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">{{ name }} {{ last }}</h4>
+                        <p class="card-text">{{ data.season }}</p>
+                    </div>
+                </div>
+        {% elif team == 'ORL' %}
+                <div class="card center" style="width:300px">
+                    <img src="https://cdn.nba.com/logos/nba/1610612753/global/L/logo.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">{{ name }} {{ last }}</h4>
+                        <p class="card-text">{{ data.season }}</p>
+                    </div>
+                </div>
+        {% elif team == 'PHI' %}
+                <div class="card center" style="width:300px">
+                    <img src="https://cdn.nba.com/logos/nba/1610612755/global/L/logo.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">{{ name }} {{ last }}</h4>
+                        <p class="card-text">{{ data.season }}</p>
+                    </div>
+                </div>
+        {% elif team == 'PHX' %}
+                <div class="card center" style="width:300px">
+                    <img src="https://cdn.nba.com/logos/nba/1610612756/global/L/logo.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">{{ name }} {{ last }}</h4>
+                        <p class="card-text">{{ data.season }}</p>
+                    </div>
+                </div>
+        {% elif team == 'POR' %}
+                <div class="card center" style="width:300px">
+                    <img src="https://cdn.nba.com/logos/nba/1610612757/global/L/logo.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">{{ name }} {{ last }}</h4>
+                        <p class="card-text">{{ data.season }}</p>
+                    </div>
+                </div>
+        {% elif team == 'SAC' %}
+                <div class="card center" style="width:300px">
+                    <img src="https://cdn.nba.com/logos/nba/1610612758/global/L/logo.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">{{ name }} {{ last }}</h4>
+                        <p class="card-text">{{ data.season }}</p>
+                    </div>
+                </div>
+        {% elif team == 'SAS' %}
+                <div class="card center" style="width:300px">
+                    <img src="https://cdn.nba.com/logos/nba/1610612759/global/L/logo.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">{{ name }} {{ last }}</h4>
+                        <p class="card-text">{{ data.season }}</p>
+                    </div>
+                </div>
+        {% elif team == 'TOR' %}
+                <div class="card center" style="width:300px">
+                    <img src="https://cdn.nba.com/logos/nba/1610612761/global/L/logo.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">{{ name }} {{ last }}</h4>
+                        <p class="card-text">{{ data.season }}</p>
+                    </div>
+                </div>
+        {% elif team == 'UTA' %}
+                <div class="card center" style="width:300px">
+                    <img src="https://cdn.nba.com/logos/nba/1610612762/global/L/logo.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">{{ name }} {{ last }}</h4>
+                        <p class="card-text">{{ data.season }}</p>
+                    </div>
+                </div>
+        {% else %}
+                <div class="card center" style="width:300px">
+                    <img src="https://cdn.nba.com/logos/nba/1610612764/global/L/logo.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">{{ name }} {{ last }}</h4>
+                        <p class="card-text">{{ data.season }}</p>
+                    </div>
+                </div>
+        {% endif %}
+        <pre></pre>
+        <pre></pre>
+        <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Player ID
+                <span class="badge bg-primary squared-pill">{{ data.id }}</span>
+            </li>
+
+            {% if data.position != "" %}
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Position
+                    <span class="badge bg-primary squared-pill">{{ data.position }}</span>
+                </li>
+            {% endif %}
+
+            {% if data.height_feet is not none and data.height_inches is not none %}
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Height
+                    <span class="badge bg-primary squared-pill">{{ data.height_feet }}'{{ data.height_inches }}"</span>
+                </li>
+            {% endif %}
+
+            {% if data.weight_pounds is not none %}
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Weight
+                    <span class="badge bg-primary squared-pill">{{ data.weight_pounds }}</span>
+                </li>
+            {% endif %}
+        </ul>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,161 @@
+nav .navbar-brand
+{
+    /* size for brand */
+    font-size: xx-large;
+}
+main .form-control
+{
+    /* Center form controls */
+    display: inline-block;
+
+    /* Override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+input[type=text] {
+    padding: 8px 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    -webkit-transition: 0.5s;
+    border-radius: 2px;
+    transition: 1s;
+    outline: none;
+    text-align: center;
+  }
+
+input[type=text]:focus {
+    border: none;
+    border-bottom: 2px solid #343a40;
+    outline: none;
+}
+
+.dropdown-menu {
+    display: none;
+    background-color: #343a40;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-item{
+    text-align: center;
+    color: white;
+    padding: 7px 10px;
+    text-decoration: none;
+    display: block;
+    font-family: copperplate, fantasy;
+  }
+
+.dropdown-item:hover{
+    color: white;
+    opacity: 0.9;
+    padding: 7px 10px;
+    text-decoration: none;
+    display: block;
+    font-family: copperplate, fantasy;
+    background-color: #343a40;
+}
+
+select.select{
+    padding: 9px 9px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+
+main
+{
+    /* Scroll horizontally as needed */
+    overflow-x: auto;
+
+    /* Center contents */
+    text-align: center;
+}
+
+main img
+{
+    /* Constrain images on small screens */
+    max-width: 100%;
+}
+
+.btn-primary
+{
+    color: #343a40;
+    background-color: #ffffff;
+    border-color: #343a40;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-primary:hover
+{
+    color: white;
+    background-color: #343a40;
+    border-color: #343a40;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-primary:active
+{
+    color: white !important;
+    background-color: #343a40 !important;
+    border-color: #343a40 !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
+.btn-primary:focus
+{
+    color: white !important;
+    background-color: #343a40 !important;
+    border-color: #343a40 !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link
+{
+    color: white;
+    font-family: copperplate, fantasy;
+    font-size: 20px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover
+{
+    opacity: 0.9;
+}
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.badge{
+    color: white;
+    font-size: 100%;
+}
+
+.bg-primary{
+    background-color: darkcyan !important;
+}
+
+
+.phrase{
+    font-family: copperplate, fantasy;
+    font-style: italic;
+    color: #343a40;
+}
+
+.lolipop{
+    border-radius: 10px;
+    width: 70%;
+    height: 70%;
+}
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+
+.about{
+    background-color: cyan;
+}

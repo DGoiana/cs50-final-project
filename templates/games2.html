@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    GAMES
+{% endblock %}
+
+{% block main %}
+<form action="/games2" method="post">
+    <div class="form-group">
+        <input autocomplete="off" autofocus class="input" name="date" placeholder="YYYY-MM-DD" type="text">
+    </div>
+    <div class="form-group">
+        <button class="btn btn-primary" type="submit">Search</button>
+    </div>
+</form>
+{% endblock %}

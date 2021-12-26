@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    TEAMS
+{% endblock %}
+
+{% block main %}
+    {% for data in data %}
+      <div id="demo" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src= {{ img }} alt="Chicago" width="850" height="350">
+            <div class="carousel-caption">
+              <h3> {{ data.abbreviation }} </h3>
+              <p> {{ data.full_name }} </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            {% if data.conference == 'West' %}
+              <img src="https://www.nba.com/clippers/sites/clippers/files/legacy/main_photo/1westconferencelogo.png" width="350" height="350">
+            {% else %}
+              <img src="https://sportsfly.cbsistatic.com/fly-0118/bundles/sportsmediacss/images/conference-logos/nba/EAST.svg" width="250" height="350">
+            {% endif %}
+            <div class="carousel-caption">
+              <h3> {{ data.conference }} Conference </h3>
+              <p> {{ data.division }} Divison </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src= {{ img2 }} width="800" height="350">
+            <div class="carousel-caption">
+              <h3> {{ ph }} </h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    GAMES
+{% endblock %}
+
+{% block main %}
+<form action="/games" method="post">
+    <div class="form-group">
+        <input autocomplete="off" autofocus class="input" name="season" placeholder="Season" type="text">
+        <select name="visitor" class="select">
+            <option disabled selected value="">Away Team</option>
+            {% for team in teams %}
+            <option value={{ team }}>{{ team }}</option>
+            {% endfor %}
+        </select>
+        <select name="visited" class="select">
+            <option disabled selected value="">Home Team</option>
+            {% for team in teams %}
+            <option value={{ team }}>{{ team }}</option>
+            {% endfor %}
+        </select>
+        <input autocomplete="off" autofocus class="input" name="date" placeholder="YYYY-MM-DD" type="text">
+    </div>
+    <div class="form-group">
+        <button class="btn btn-primary" type="submit">Search</button>
+    </div>
+</form>
+{% endblock %}
