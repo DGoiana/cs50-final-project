@@ -1,6 +1,7 @@
-NBA STATS
+# NBA STATS
 #### Video Demo:  <URL HERE>
-Description:
+#### Description:
+
 This project is a web app made using Flask and Python. It was made in order to end the CS50's Harvard University Course.
 The main objective of the website is to scrap data from the balldontlie API (NBA data).
 The website has many functionalities like:
@@ -10,5 +11,6 @@ The website has many functionalities like:
 The project contains 16 HTML files, 1 Python file, and 1 CSS file.
 During the development of the site it was used Bootstrap in order to leave the webpage a little more aesthetic.
 
-Made by:
+#### Made by:
+  
   Diogo Martins, 17, Portugal
