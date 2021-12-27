@@ -1,5 +1,5 @@
 # NBA STATS
-#### Video Demo:  <URL HERE>
+#### Video Demo:  https://www.youtube.com/watch?v=QeJdlR4bTMg
 #### Description:
 
 This project is a web app made using Flask and Python. It was made in order to end the CS50's Harvard University Course.
