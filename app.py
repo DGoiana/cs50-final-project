@@ -296,7 +296,7 @@ def stats():
             flash("You must insert all the data!")
             return redirect("/stats")
         try:
-            info = "https://www.balldontlie.io/api/v1/stats?game_ids[]=" + id + "&per_page=30"
+            info = "https://www.balldontlie.io/api/v1/stats?game_ids[]=" + id + "&per_page=100"
             response = requests.get(url = info).json()
         except ValueError:
             flash("Error!")
